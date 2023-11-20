@@ -21,6 +21,7 @@ int main() {
     } else {
         std::cout << "Cannot divide by zero." << std::endl;
     }
+    std::cout << "Hi hello, How are you?" << std::endl;
 
     return 0;
 }
