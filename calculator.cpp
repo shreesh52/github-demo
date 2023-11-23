@@ -1,5 +1,6 @@
 // Calculator.cpp
 #include "calculator.h"
+int z;
 
 int Calculator::add(int a, int b) {
     return a + b;

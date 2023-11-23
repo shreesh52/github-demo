@@ -1,0 +1,48 @@
+---
+MainSourceFile:  '/home/vagrant/github-demo/main.cpp'
+Diagnostics:
+  - DiagnosticName:  llvm-header-guard
+    DiagnosticMessage:
+      Message:         header is missing header guard
+      FilePath:        '/home/vagrant/github-demo/calculator.h'
+      FileOffset:      0
+      Replacements:
+        - FilePath:        '/home/vagrant/github-demo/calculator.h'
+          Offset:          0
+          Length:          0
+          ReplacementText: '#ifndef _HOME_VAGRANT_GITHUB_DEMO_CALCULATOR_H
+
+#define _HOME_VAGRANT_GITHUB_DEMO_CALCULATOR_H
+
+
+
+'
+        - FilePath:        '/home/vagrant/github-demo/calculator.h'
+          Offset:          171
+          Length:          0
+          ReplacementText: '
+
+#endif
+
+'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''num1'' is not initialized'
+      FilePath:        '/home/vagrant/github-demo/main.cpp'
+      FileOffset:      106
+      Replacements:
+        - FilePath:        '/home/vagrant/github-demo/main.cpp'
+          Offset:          110
+          Length:          0
+          ReplacementText: ' = 0'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''num2'' is not initialized'
+      FilePath:        '/home/vagrant/github-demo/main.cpp'
+      FileOffset:      112
+      Replacements:
+        - FilePath:        '/home/vagrant/github-demo/main.cpp'
+          Offset:          116
+          Length:          0
+          ReplacementText: ' = 0'
+...

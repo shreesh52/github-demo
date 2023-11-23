@@ -3,6 +3,7 @@
 #include "calculator.h"
 
 int main() {
+	int n1,n2;
     Calculator calculator;
 
     int num1, num2;

@@ -1,0 +1,7 @@
+[
+	{
+		"directory": "/home/vagrant/github-demo",
+		"command": "/usr/bin/g++ -std=c++11 -c main.cpp -o main.o",
+		"file": "main.cpp"
+	}
+]

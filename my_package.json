@@ -1,0 +1,30 @@
+{
+    "name": "doxygen_checker",
+    "description": "Custom doxygen comment checker",
+    "supported_languages": [
+        "c/c++"
+    ],
+    "analyzer_types": [
+        "doxygen"  
+    ],
+    "analyzer_binaries": [
+        "mypackage.py"
+    ],
+    "analyzer_docker_images": [
+        "custom_doxygen_image"
+    ],
+    "analyzer_extra_arguments": [
+        "-lp"
+    ],  
+    "analyzer_statistics": {
+        "doxygen_comments": {
+            "name": "Number of doxygen comments",
+            "description": "Count the doxygen comments...",
+            "operation": "sum",
+            "format": "normal"
+        }
+    },
+    "analyzer_docs": [
+        "This package checks for doxygen style comments."
+    ]
+}
