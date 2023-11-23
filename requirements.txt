@@ -1,5 +1,5 @@
 alembic==1.5.5
-codechecker-api==6.53.0
+codechecker-api==6.39.0
 codechecker-api-shared==6.53.0
 contourpy==1.1.1
 cpplint==1.6.1
